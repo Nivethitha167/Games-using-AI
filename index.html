@@ -1,0 +1,33 @@
+<html>
+<head><title>AI Snake Game</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/h5bp.css">
+<script src="snake.js"></script>
+</head>
+<body onload="init();">
+<input type="button" value="Start" onclick="start();">&nbsp;&nbsp;
+<input type="button" value="Stop" onclick="stop();">&nbsp;&nbsp;
+<select id="search" onchange="change_search();">
+<option>BFS</option>
+<option>DFS</option>
+<option>A* - H1</option>
+<option>A* - H2</option>
+<option>A* - (H1+H2)/2</option>
+</select>
+
+<br>
+<canvas id="canvas" width="300" height="300"></canvas>
+
+<div id="stats" style="float:right;width:300px;">
+Food Eaten: <span id="food_val"></span><br>
+Moves: <span id="moves_val"></span><br>
+Average Moves: <span id="avg_moves_val"></span><br>
+Average Nodes Processed: <span id="avg_nodes_val"></span><br>
+</div>
+
+
+	Snake Game
+</footer>
+</body>
+</html>
