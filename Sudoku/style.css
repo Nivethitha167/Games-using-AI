@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background: lightgray;
+}
+
+#headers {
+    text-align: center;
+}
+
+button{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 6em;
+    height: 3em;
+    font-size: 2em;
+    border: 2px solid black;
+    background: #43c0ff;
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+button:hover{
+    background: rgb(248, 248, 248);
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#sudokuDiv{
+    margin-bottom: 2em;
+}
+
+.boardEntryField {
+    width: 1.7em;
+    height: 1.7em;
+    padding: 0em;
+    border: 2px solid black;
+    font-size: 2em;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.boarderLeft {
+    border-left: 3px solid blue;
+}
+
+.boarderRight {
+    border-right: 3px solid blue;
+}
+
+.boarderTop {
+    border-top: 3px solid blue;
+
+}
+
+.boarderBottom {
+    border-bottom: 3px solid blue;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <script type="text/javascript" src="scripts/SudokuCSP.js"></script>
+    <script type="text/javascript" src="scripts/CSPBacktrack.js"></script>
+    <script type="text/javascript" src="scripts/sudoku.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="createTable()">
+    <div id="headers">
+      <h1>Sudoku solver</h1>
+      <h2> Sudoku</h2>
+      <p id="noSolTxt" style="visibility: hidden">Cannot Find Solution :(</p>
+    </div>
+    <div id="sudokuDiv"></div>
+    <div id="buttons">                                               
+        <button onclick="solve()">Solve</button>
+        <button onclick="resetBoard()">Clear</button>
+    </div>
+    
+  </body>
+  
+</html>
